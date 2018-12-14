@@ -1,0 +1,120 @@
+@import "./variables";
+@import "./layout";
+
+#main-content {
+  .flex-align {
+    display: flex;
+    justify-content: flex-start;
+  }
+  #toolbar-menu.toolbar-menu-secondary,
+  #toolbar-menu.main-toolbar-secondary > div {
+    background-color: $cisco-dark-blue;
+    border-radius: 0;
+    .menu.right {
+      .icon.item {
+        color: #fff;
+      }
+    }
+  }
+  background: $cisco-pale-gray;
+  #main {
+    [id*="template"] {
+      [class*="-header"] {
+        background: $cisco-dark-blue;
+        > .header,
+        > .header + .icon {
+          color: #fff;
+        }
+      }
+      .ui.blue-outline {
+        color: $cisco-logo-blue;
+      }
+      .ui.blue-solid {
+        color: #fff;
+        background: $cisco-logo-blue;
+        border: 1px solid $cisco-light-gray;
+      }
+    }
+    .no-repos {
+      padding-top: 75px;
+    }
+    width: 1240px;
+    #repo-template-builder {
+      .repo-template-builder-tab {
+        .ui.bottom.attached.segment.tab {
+          min-height: 280px;
+        }
+      }
+      .grid-main {
+        .equal.width.fields {
+          margin-bottom: 0;
+        }
+      }
+      .rtb-header {
+        display: flex;
+        justify-content: space-between;
+        .header {
+          margin: 0;
+        }
+      }
+    }
+    .ui.segments.segments-hover,
+    .ui.segment.segment-hover {
+      &:hover {
+        box-shadow: 2px 2px 8px 2px $cisco-light-gray;
+      }
+      border-radius: 0.125em;
+      .ui.form {
+        border: none;
+      }
+    }
+    .tabs {
+      .ui.menu {
+        justify-content: space-between;
+      }
+    }
+    .navigate-user {
+      justify-content: center;
+      align-items: center;
+      display: flex;
+    }
+  }
+}
+
+.dimmed {
+  .ui.inverted.modals.dimmer.transition.visible.active {
+    display: flex !important;
+  }
+}
+
+.modals [id*="-modal"] {
+  > h2,
+  > .header {
+    background: $cisco-dark-blue;
+    color: #fff;
+    .content,
+    .icon {
+      color: #fff;
+    }
+  }
+  .actions {
+    .ui.button {
+      background: #6cc04a;
+    }
+  }
+}
+
+#react-table {
+  .error {
+    color: $cisco-deep-red;
+  }
+  .trace {
+    color: $cisco-sage-green;
+  }
+  .info {
+    color: $cisco-sage-green;
+  }
+  .warning {
+    color: $cisco-orange;
+  }
+}

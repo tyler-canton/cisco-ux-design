@@ -1,0 +1,110 @@
+#main-content {
+  background: #e8ebf1;
+}
+#main-content .flex-align {
+  display: flex;
+  justify-content: flex-start;
+}
+#main-content #toolbar-menu.toolbar-menu-secondary,
+#main-content #toolbar-menu.main-toolbar-secondary > div {
+  background-color: #2b5592;
+  border-radius: 0;
+}
+#main-content #toolbar-menu.toolbar-menu-secondary .menu.right .icon.item,
+#main-content
+  #toolbar-menu.main-toolbar-secondary
+  > div
+  .menu.right
+  .icon.item {
+  color: #fff;
+}
+#main-content #main {
+  width: 1240px;
+}
+#main-content #main [id*="template"] [class*="-header"] {
+  background: #2b5592;
+}
+#main-content #main [id*="template"] [class*="-header"] > .header,
+#main-content #main [id*="template"] [class*="-header"] > .header + .icon {
+  color: #fff;
+}
+#main-content #main [id*="template"] .ui.blue-outline {
+  color: #1baadc;
+}
+#main-content #main [id*="template"] .ui.blue-solid {
+  color: #fff;
+  background: #1baadc;
+  border: 1px solid #a7a9ab;
+}
+#main-content #main .no-repos {
+  padding-top: 75px;
+}
+#main-content
+  #main
+  #repo-template-builder
+  .repo-template-builder-tab
+  .ui.bottom.attached.segment.tab {
+  min-height: 280px;
+}
+#main-content #main #repo-template-builder .grid-main .equal.width.fields {
+  margin-bottom: 0;
+}
+#main-content #main #repo-template-builder .rtb-header {
+  display: flex;
+  justify-content: space-between;
+}
+#main-content #main #repo-template-builder .rtb-header .header {
+  margin: 0;
+}
+#main-content #main .ui.segments.segments-hover,
+#main-content #main .ui.segment.segment-hover {
+  border-radius: 0.125em;
+}
+#main-content #main .ui.segments.segments-hover:hover,
+#main-content #main .ui.segment.segment-hover:hover {
+  box-shadow: 2px 2px 8px 2px #a7a9ab;
+}
+#main-content #main .ui.segments.segments-hover .ui.form,
+#main-content #main .ui.segment.segment-hover .ui.form {
+  border: none;
+}
+#main-content #main .tabs .ui.menu {
+  justify-content: space-between;
+}
+#main-content #main .navigate-user {
+  justify-content: center;
+  align-items: center;
+  display: flex;
+}
+
+.dimmed .ui.inverted.modals.dimmer.transition.visible.active {
+  display: flex !important;
+}
+
+.modals [id*="-modal"] > h2,
+.modals [id*="-modal"] > .header {
+  background: #2b5592;
+  color: #fff;
+}
+.modals [id*="-modal"] > h2 .content,
+.modals [id*="-modal"] > h2 .icon,
+.modals [id*="-modal"] > .header .content,
+.modals [id*="-modal"] > .header .icon {
+  color: #fff;
+}
+.modals [id*="-modal"] .actions .ui.button {
+  background: #6cc04a;
+}
+
+#react-table .error {
+  color: #8b1001;
+}
+#react-table .trace {
+  color: #abc233;
+}
+#react-table .info {
+  color: #abc233;
+}
+#react-table .warning {
+  color: #ffa000;
+}
